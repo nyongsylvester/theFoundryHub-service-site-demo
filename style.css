@@ -1,0 +1,149 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1d2330;
+  background: #f7f6f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 8%;
+  background: #ffffff;
+}
+
+header > a {
+  color: #173b35;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+}
+
+nav a {
+  color: #343b48;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #16735c;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+#home {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#home > p:first-child {
+  color: #16735c;
+  font-weight: 700;
+}
+
+h1 {
+  max-width: 750px;
+  margin: 0.5rem 0 1rem;
+  color: #173b35;
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  line-height: 1.05;
+}
+
+#home > p:nth-of-type(2) {
+  max-width: 650px;
+  color: #596171;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+#home > a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 6px;
+  background: #173b35;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#home > a:hover {
+  background: #24574e;
+}
+
+#services {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+#services h2 {
+  grid-column: 1 / -1;
+}
+
+article {
+  padding: 1.5rem;
+  border: 1px solid #e1e2dc;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+article h3 {
+  margin-top: 0;
+  color: #173b35;
+}
+
+#approach,
+#contact {
+  max-width: 720px;
+}
+
+#approach p,
+#contact p {
+  color: #596171;
+  line-height: 1.7;
+}
+
+footer {
+  padding: 1.5rem 8%;
+  background: #173b35;
+  color: #ffffff;
+}
+
+@media (max-width: 640px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 0.9rem;
+  }
+
+  #services {
+    grid-template-columns: 1fr;
+  }
+}
