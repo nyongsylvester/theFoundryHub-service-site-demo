@@ -15,3 +15,8 @@ In progress. This project is also part of my hands-on learning in frontend devel
 
 ## Accuracy note
 This is a developing brand and learning project. Client work, results, and testimonials will only be added when they are real and authorized.
+## Deployment
+
+This static website is published with GitHub Pages from the `main` branch and the repository root. Changes pushed to the publishing source trigger an automated deployment.
+
+Live site: https://nyongsylvester.github.io/theFoundryHub-service-site-demo/
