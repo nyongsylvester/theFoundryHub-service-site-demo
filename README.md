@@ -23,4 +23,8 @@ Live site: https://nyongsylvester.github.io/theFoundryHub-service-site-demo/
 ## Automated validation
 
 A GitHub Actions workflow checks that `index.html` and `style.css` exist, that the HTML links the stylesheet and includes the contact button, and that the button has a matching CSS rule. It runs on pushes to `main` and on pull requests targeting `main`.
+## Automated validation
+
+GitHub Actions checks that `index.html` and `style.css` exist, that the HTML links the stylesheet and includes the contact button, and that a matching CSS rule exists. The workflow runs on pushes to `main` and on pull requests targeting `main`.
+
 
