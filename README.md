@@ -20,3 +20,7 @@ This is a developing brand and learning project. Client work, results, and testi
 This static website is published with GitHub Pages from the `main` branch and the repository root. Changes pushed to the publishing source trigger an automated deployment.
 
 Live site: https://nyongsylvester.github.io/theFoundryHub-service-site-demo/
+## Automated validation
+
+A GitHub Actions workflow checks that `index.html` and `style.css` exist, that the HTML links the stylesheet and includes the contact button, and that the button has a matching CSS rule. It runs on pushes to `main` and on pull requests targeting `main`.
+
